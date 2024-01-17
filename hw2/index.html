@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework2</title>
+    <link rel="icon" href="https://camo.githubusercontent.com/eb8b5f9caa4b4765b222e961729eadb775ac710b/68747470733a2f2f67617265766e612e6769746875622e696f2f6a732d73616d706c65732f696d616765732f612d6c6576656c2d69636f2e706e67"> 
+</head>
+
+<body>
+    <script>
+       
+        var age = +prompt("Вкажіть ваш вік?");
+        var birthYear = 2024 - age;
+        alert("Ви народились в: " + birthYear);
+
+        var c = +prompt("Задайте температуру в градусах Цельсія");
+        var f = c * (9 / 5) + 32;
+        alert("Вказана температура в градусах Цельсія матиме таке значення в Фаренгейтах" + f);
+
+        const rate = 28.50; 
+        var amountInCurrency = +prompt("Введіть суму в одній валюті:");
+        var exchangedAmount = (amountInCurrency * rate).toFixed(2);
+        alert("Результат обміну: " + exchangedAmount);
+
+        var red = +prompt("Введіть значення червоного (red) (0-255):");
+        var green = +prompt("Введіть значення зеленого (green) (0-255):");
+        var blue = +prompt("Введіть значення синього (blue) (0-255):");
+
+        var redHex = red.toString(16);
+        var greenHex = green.toString(16);
+        var blueHex = blue.toString(16);
+
+        var cssColor = "#" + redHex + greenHex + blueHex;
+        alert("CSS-колір: " + cssColor);
+
+    </script>
+</body>
+
+</html>
