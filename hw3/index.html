@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework3</title>
+    <link rel="icon" href="https://camo.githubusercontent.com/eb8b5f9caa4b4765b222e961729eadb775ac710b/68747470733a2f2f67617265766e612e6769746875622e696f2f6a732d73616d706c65732f696d616765732f612d6c6576656c2d69636f2e706e67"> 
+</head>
+
+<body>
+    <script>
+        // 1 String: greeting
+        let yourName = prompt("Як вас звати?")
+        alert("Привіт, " + yourName + " !")
+
+        // 2 String: gopni4ek
+        const yourText = prompt("Введіть рядок:");
+        const arr = yourText.split(',');
+        const resultText = arr.join(', блін');
+        alert(resultText);
+
+        // 3 String: capitalize
+        let str = "cANBerRa"
+        let result = str[0].toUpperCase() + str.slice(1).toLowerCase();
+        console.log(result) 
+
+        // 4 String: word count
+        let yourText2 = "java script";
+        console.log(yourText2.split(' ').length);
+
+        // 5 String: credentials
+        let name = prompt('ваше ім\'я').trim();
+        let name1 = name[0].toUpperCase() + name.slice(1).toLowerCase();
+
+        let fathername = prompt('ваше по батькові').trim();
+        let fathername1 = fathername[0].toUpperCase() + fathername.slice(1).toLowerCase();
+
+        let surname = prompt('ваше прізвище').trim();
+        let surname1 = surname[0].toUpperCase() + surname.slice(1).toLowerCase();
+
+        alert("Вас звати: " + name1 + ", " + fathername1 + ", " + surname1);
+
+        // 6 String: beer
+        let pivo = "Було жарко. Василь пив пиво вприкуску з креветками";
+        let tea = pivo.replace('пиво', 'чай');
+        alert(tea);
+
+        // 7 String: no tag
+        let str1 = "якийсь текст, в якому є один тег <br /> і всяке інше";
+        let startIndex = str1.indexOf("<");
+        let endIndex = str1.indexOf(">");
+        newStr = str1.slice(0, startIndex) + str1.slice(endIndex + 1);
+        console.log(newStr);
+
+        // 8 String: big tag
+        let str2 = "якийсь текст у якому є один тег <br /> і всяке інше";
+        let startIndex2 = str2.indexOf("<br />");
+        newStr2 = str2.slice(0, startIndex2) + str2.slice(startIndex2, startIndex2 + 6).toUpperCase() + str2.slice(startIndex2 + 6);
+        console.log(newStr2);
+
+       
+
+
+    </script>
+</body>
+
+</html>
