@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework4</title>
+    <link rel="icon" href="https://camo.githubusercontent.com/eb8b5f9caa4b4765b222e961729eadb775ac710b/68747470733a2f2f67617265766e612e6769746875622e696f2f6a732d73616d706c65732f696d616765732f612d6c6576656c2d69636f2e706e67"> 
+</head>
+
+<body>
+    <script>
+        // Number: odd
+        let number = prompt("введіть якесь число");
+        if (!!Number(number)) {
+            alert("так, це число");
+        }
+        else {
+            alert('ой, це не число');
+        }
+        if (number % 2) {
+            alert("число не парне");
+        }
+        else {
+            alert("число парне");
+        }
+
+
+        //  Boolean
+        const answer1 = confirm("Подобається вам цей курс");
+        const answer2 = confirm("ваша стать?");
+        console.log(answer1, answer2);
+
+        //  Boolean: if
+        if (answer2) {
+            alert("ви жінка!")
+        }
+        else {
+            alert("ви чоловік")
+        }
+
+        // Comparison: sizes
+        let chooseSize = prompt("виберіть розмір: 40, 42, 44, 46, 48, 50, 52, 54");
+        if (+chooseSize == 40) {
+            alert("ваш французький розмір: 36")
+        } else if (+chooseSize == 42) {
+            alert("ваш французький розмір: 38")
+        } else if (+chooseSize == 44) {
+            alert("ваш французький розмір: 40")
+        } else if (+chooseSize == 46) {
+            alert("ваш французький розмір: 42")
+        } else if (+chooseSize == 48) {
+            alert("ваш французький розмір: 44")
+        } else if (+chooseSize == 50) {
+            alert("ваш французький розмір: 46")
+        } else if (+chooseSize == 52) {
+            alert("ваш французький розмір: 48")
+        } else if (+chooseSize == 54) {
+            alert("ваш французький розмір: 50")
+        }
+
+        // Ternary
+        const sex = confirm("ви жінка?");
+        let sexIs = sex ? alert("так, ви жінка") : alert("ви чоловік");
+        
+         //  Prompt: or
+         let age = prompt("скільки вам років?") || alert('спробуйте знову ввести свій вік');
+         
+          // Default: or
+        let name = prompt('ваше ім\'я') || "Дмитро";
+        let fathername = prompt('ваше по батькові') || "Дмитрович";
+        let surname = prompt('ваше прізвище') || "Дмитренко";
+        alert("Ваш ПІБ: " + name + ", " + fathername + ", " + surname);
+
+        //  Default: if
+        let name1 = prompt('введіть ім\'я')
+        if (name1) {
+            name2 = name1
+        }
+        else {
+            name2 = "Дмитро"
+        }
+        let fathername1 = prompt('введіть по батькові')
+        if (fathername1) {
+            fathername2 = fathername1
+        }
+        else {
+            fathername2 = "Дмитрович"
+        }
+        let surname1 = prompt('введіть прізвище')
+        if (surname1) {
+            surname2 = surname1
+        }
+        else {
+            surname2 = "Дмитренко"
+        }
+        alert("Ваш ПІБ: " + name2 + ", " + fathername2 + ", " + surname2);
+
+       
+       
+
+    </script>
+</body>
+
+</html>
