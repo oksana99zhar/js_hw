@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework5</title>
+    <link rel="icon" href="https://camo.githubusercontent.com/eb8b5f9caa4b4765b222e961729eadb775ac710b/68747470733a2f2f67617265766e612e6769746875622e696f2f6a732d73616d706c65732f696d616765732f612d6c6576656c2d69636f2e706e67"> 
+</head>
+
+<body>
+    <script>
+        //  Confirms
+        let answers = [];
+        let answer1 = confirm("Чи подобається вам цей курс?");
+        answers.push(answer1);
+
+        let answer2 = confirm("Чи є якісь теми які вам незрозумілі?");
+        answers.push(answer2);
+
+        console.log("Відповіді на запитання: " + answers);
+
+        //  Prompts
+        const person = [];
+        person[0] = prompt("Як вас звати?");
+        person[1] = prompt("Ваше по-батькові?");
+        person[2] = prompt("Ваше прізвище");
+        alert("ваш ПІБ: " + person);
+
+        //  Item access
+        const arr = [5, 6, 7, 8];
+        let index = prompt("введіть число від 0 до 3 або length");
+        if (!isNaN(index) && index >= 0 && index < myArray.length) {
+            alert(arr[index]);
+        } else {
+            alert(arr.length);
+        }
+
+        //  Item change
+        const arr2 = [, , , , , , , , , ,];
+        let index2 = prompt("введіть індекс");
+        let item = prompt("введіть значення");
+        arr2[index2] = item;
+        alert(arr2);
+
+        //  Multiply table
+        const mul = [
+            [0, 0, 0, 0, 0, 0],
+            [0, 1, 2, 3, 4, 5],
+            [0, 2, 4, 6, 8, 10],
+            [0, 3, 6, 9, 12, 15],
+            [0, 4, 8, 12, 16, 20],
+            [0, 1, 10, 15, 20, 25],
+        ];
+        let multiplier1 = +prompt("задайте перший множник від 0 до 5");
+        let multiplier2 = +prompt("задайте другий множник від 0 до 5");
+        alert(
+            multiplier1 + "*" + multiplier2 + "=" + mul[multiplier1][multiplier2]
+        );
+
+
+        //  IndexOf Word
+        let stringOfWords = prompt("введіть кілька слів");
+        let word = prompt("введіть слово, яке треба знайти");
+        let words = stringOfWords.split(" ");
+        let wordIndex = words.indexOf(word);
+        if (wordIndex !== -1) {
+            alert("позиція слова: " + (wordIndex + 1));
+        } else {
+            alert("введене неправильне слово");
+        }
+
+        //  Reverse
+        let arr3 = [];
+        let item1 = prompt("перший елемент:");
+        arr3.push(item1);
+        let item2 = prompt("другий елемент:");
+        arr3.push(item2);
+        let item3 = prompt("третій елемент:");
+        arr3.push(item3);
+        let item4 = prompt("четвертий елемент:");
+        arr3.push(item4);
+        let item5 = prompt("п'ятий елемент:");
+        arr3.push(item5);
+        alert(arr3);
+        let a = arr3.pop();
+        let b = arr3.pop();
+        let c = arr3.pop();
+        let d = arr3.pop();
+        let e = arr3.pop();
+        let reverseArr = [];
+        reverseArr.push(a);
+        reverseArr.push(b);
+        reverseArr.push(c);
+        reverseArr.push(d);
+        reverseArr.push(e);
+        alert(reverseArr);
+
+        //  Reverse 2
+        let a1 = reverseArr.shift();
+        let b1 = reverseArr.shift();
+        let c1 = reverseArr.shift();
+        let d1 = reverseArr.shift();
+        let e1 = reverseArr.shift();
+        let newReverseArr = [];
+        newReverseArr.unshift(a1);
+        newReverseArr.unshift(b1);
+        newReverseArr.unshift(c1);
+        newReverseArr.unshift(d1);
+        newReverseArr.unshift(e1);
+        alert(newReverseArr);
+
+        //  Copy
+        let newMulArr = [...mul];
+        console.log(newMulArr);
+
+      
+
+        // Array Equals
+        let array1 = [1, 2, 3];
+        let array2 = array1;
+        console.log(array1 === array2);
+
+
+        //  Destruct
+        let longWord = prompt("введіть слово  не менше як з дев'яти літер")
+            .split(" ")
+            .join("");
+        let [s, , , , x, , , , v] = longWord;
+        alert(
+            " перша літера: " + s + " п'ята літера: " + x + " дев'ята літера: " + v
+        );
+
+
+        //  For Alert
+        const names = ["John", "Paul", "George", "Ringo"];
+        for (const name of names) {
+            alert(`Hello, ${name}`);
+        }
+
+
+        // Map Capitalize
+        let userStr = prompt('введіть рядок');
+        let arrOfStr = userStr.split(" ");
+        const capStr = arrOfStr.map(capitalize);
+        const resultStr = capStr.join(" ");
+        console.log(resultStr);
+
+
+    </script>
+</body>
+
+</html>
